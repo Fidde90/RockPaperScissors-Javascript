@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/41c8b474e2.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <div id="infobox" class="hidden"></div>
+        </div>
+
+        <div class="players">
+            <div class="playerhands">
+                <img id="scissor" src="images/scissors.png" alt="">
+                <img id="rock" src="images/rock.png" alt="">
+                <img id="paper" src="images/paper.png" alt="">
+                <img id="playerHand" src="images/rock.png" alt="">
+                <div id="name"></div>
+            </div>
+
+            <div class="computerhands">
+                <img id="computerscissor" src="images/computerscissors.png" alt="">
+                <img id="computerrock" src="images/computerhand.png" alt="">
+                <img id="computerpaper" src="images/computerpaper.png" alt="">
+                <img id="computerHand" src="images/computerhand.png" alt="">
+            </div>
+        </div>
+
+        <button class="hidden game-btn" id="resetGameBtn" onclick="resetGame()">Play again</button>
+
+        <div class="buttons">
+
+            <div class="scores">
+                <div id="win" class="wins"></div>
+                <div id="lose" class="loses"></div>
+                <div id="tie" class="ties"></div>
+            </div>
+            <button class="game-btn" id="paper-btn" onclick="play()"><img src="images/paper.png" alt=""></button>
+            <button class="game-btn" id="rock-btn" onclick="play()"><img src="images/rock.png" alt=""></button>
+            <button class="game-btn" id="scissor-btn" onclick="play()"><img src="images/scissors.png" alt=""></button>
+        </div>
+    </div>
+</body>
+
+</html>
